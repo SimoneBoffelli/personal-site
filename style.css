@@ -1,0 +1,401 @@
+html {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* ---------------------------------- navbar ------------------------------------------- */
+.logo {
+    margin: -15px -10px -27px -10px;
+    width: 60px;
+    height: 65px;
+}
+.navbar {
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 20px;
+    color: #fff;
+}
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-item {
+    display: inline-block;
+    margin-right: 20px;
+}
+/* CSS per la navbar a discesa */
+.dropdown-menu {
+    font-size: 1.2rem;
+    display: none;
+    position: absolute; /* fissa il menu separandolo a quello a discesa */
+    background-image: linear-gradient(#c5dff86b, #4a54a26b);
+    padding: 20px;
+}
+.nav-item:hover .dropdown-menu {
+    display: block;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    border-top-right-radius: 20%;
+}
+.dropdown-menu li {
+    display: block; /* MODIFICA IL MENU DROPDOWN IN VERTICALE!!! */
+    margin-bottom: 15px;
+}
+/* Stili aggiuntivi per i link */
+.nav-item a {
+    color: #fff;
+    text-decoration: none;
+}
+.nav-item a:hover {
+    color: #A0BFE0;
+}
+.dropdown-menu a {
+    color: #fff;
+    text-decoration: none;
+}
+.dropdown-menu a:hover {
+    color: #A0BFE0;
+}
+/* ---------------------------------- header -------------------------------------- */
+header {
+    padding: 0 0 80px 0;
+    background-image: linear-gradient(#4A55A2, #C5DFF8);
+}
+.logo-container {
+    display: flex;
+    justify-content: center;
+}
+.cloud1 {
+    position: relative;
+    top: 210px;
+    left: 125px;
+    transform: translateX(-50%);
+    height: 50px;
+}
+.cloud2 {
+    position: relative;
+    top: 90px;
+    right: 100px;
+    transform: translateX(45%);
+    height: 50px;
+}
+.header-logo {
+    height: 500px;
+}
+.title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#title {
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    color: #4A55A2;
+    font-weight: 800;
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+#sub-title {
+    font-weight: 500;
+    text-align: center;
+    color: #4A55A2;
+    font-size: 2.5rem;
+}
+.my-pic {
+    margin: 50px 0 -60px 0;
+    width: 180px;
+}
+/* ---------------------------------- layout -------------------------------------- */
+.container {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+.sidebar {
+    background-color: #c5dff8;
+}
+.content {
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: #C5DFF8;
+}
+.end-spacing {
+    margin-bottom: 50px;
+}
+/* --------------------------------- border --------------------------------------  */
+.border {
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.border-dotted {
+    filter: opacity(.28) drop-shadow(0 0 0 #EEEEEE);
+    border-radius: 50%;
+    height: 1rem;
+    margin: 4px;
+    padding: 0;
+}
+.border-dotted-1 {
+    filter: opacity(.25) drop-shadow(0 0 0 #EEEEEE);
+    
+    border-radius: 50%;
+    height: .7rem;
+    margin: 4px;
+    padding: 0;
+}
+.border-dotted-2 {
+    filter: opacity(.2) drop-shadow(0 0 0 #EEEEEE);
+    border-radius: 50%;
+    height: .5rem;
+    margin: 2px;
+    padding: 0;
+}
+.border-dotted-3 {
+    filter: opacity(.15) drop-shadow(0 0 0 #EEEEEE);
+    border-radius: 50%;
+    height: .3rem;
+    margin: 2px;
+    padding: 0;
+}
+/* ----------------------------------- content ------------------------------------- */
+.subtitle {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #7490c5;
+}
+.sub-content {
+    color: #49608bad;
+}
+/* --------------------------------- about me -------------------------------------- */
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/* --------------------------------- skills ---------------------------------------- */
+#skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/* --------------------------------- hobbies --------------------------------------- */
+#hobby {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/* ------------------------------- contact me -------------------------------------- */
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.description {
+    color: #7490c5;
+    font-weight: 600;
+}
+.mail-button {
+    margin-top: 20px;
+    background-color: #7490c5;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #fff;
+    display: block;
+    padding: .3rem 2rem;
+}
+.mail-button:hover {
+    background-color: #464f97;
+}
+/* ------------------------------ footer -------------------------------------------- */
+footer {
+    margin: 0;
+    padding: 15px 0;
+    background-image: linear-gradient(#bbd5ec, #464f97);
+    height: 100px;
+}
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+.language {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    margin: 5px;
+}
+.language:hover {
+    color: #464f97;
+}
+.current {
+    color: #464f97;
+    text-decoration: underline;
+}
+.copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+}
+.footer-sidebar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link-pic {
+    padding: 0;
+    margin: 5px;
+    height: 30px;
+    width: auto;
+}
+.link-pic:hover {
+    fill: #464f97;
+}
+/* --------------------------- scroll to top ------------------------------------- */
+#scrolled-indicator {
+    position: fixed;
+    right: 5%;
+    bottom: 10%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.scrolled-pic {
+    border-radius: 50%;
+    width: 40px;
+    opacity: 0.2;
+}
+.scrolled-pic:hover {
+    opacity: 0.7;
+}
+/* ------------------------------------------------------------------------------- */
+                                /* media query */
+/* ------------------------------------------------------------------------------- */
+@media  screen and  (max-width: 980px) {
+    /* ---------------------------- layout --------------------------------------- */
+    .container {
+        grid-template-columns: 1fr 5fr 1fr;
+    }
+    /* ---------------------------- navbar -------------------------------------- */
+    .logo {
+        margin: 10px -10px -47px -10px;
+        padding: 10px;
+        width: 90px;
+        height: 95px;
+    }
+    .navbar {
+        font-size: 2rem;
+        color: #fff;
+    }
+    /* CSS per la navbar a discesa */
+    .dropdown-menu {
+        font-size: 2rem;
+        padding: 25px;
+    }
+    .dropdown-menu li {
+        margin-bottom: 20px;
+    }
+    /* --------------------------- header ---------------------------------------- */
+    .my-pic {
+        width: 350px;
+    }
+    /* --------------------------- border ---------------------------------------  */
+    .border {
+        margin: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .border-dotted {
+        filter: opacity(.28) drop-shadow(0 0 0 #EEEEEE);
+        border-radius: 50%;
+        height: 1.5rem;
+        margin: 4px;
+        padding: 0;
+    }
+    .border-dotted-1 {
+        filter: opacity(.25) drop-shadow(0 0 0 #EEEEEE);
+        
+        border-radius: 50%;
+        height: 1.2rem;
+        margin: 4px;
+        padding: 0;
+    }
+    .border-dotted-2 {
+        filter: opacity(.2) drop-shadow(0 0 0 #EEEEEE);
+        border-radius: 50%;
+        height: 1rem;
+        margin: 2px;
+        padding: 0;
+    }
+    .border-dotted-3 {
+        filter: opacity(.15) drop-shadow(0 0 0 #EEEEEE);
+        border-radius: 50%;
+        height: .8rem;
+        margin: 2px;
+        padding: 0;
+    }
+    /* ---------------------- content ------------------------------------------- */
+    footer {
+        padding: 2.5rem;
+    }
+    .subtitle {
+        font-size: 3rem;
+    }
+    .sub-content {
+        font-size: 1.7rem;
+    }
+    .description {
+        font-size: 1.8rem;
+    }
+    .mail-button {
+        margin-top: 20px;
+        font-size: 2.4rem;
+        font-weight: 400;
+        color: #fff;
+        padding: 20px 100px;
+    }
+    /* --------------------- footer ------------------------------------------ */
+    .footer-container {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+    }
+    .language {
+        margin: 10px;
+        font-size: 2rem;
+    }
+    .copy {
+        font-size: 1.9rem;
+    }
+    .link-pic {
+        margin: 10px;
+        height: 50px;
+    }
+    /* --------------- scroll to top ---------------------------------------- */
+    #scrolled-indicator {
+        right: 15px;
+        bottom: 180px;
+    }
+    .scrolled-pic {
+        width: 100px;
+    }
+}
